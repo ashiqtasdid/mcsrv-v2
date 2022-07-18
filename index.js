@@ -1,5 +1,8 @@
 const Discord = require('discord.js');
 const util = require('minecraft-server-util');
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '.env') })
+const TOKEN = process.env.CLIENT_TOKEN
 
 const client = new Discord.Client();
 
@@ -15,4 +18,4 @@ client.events = new Discord.Collection();
 })
 
 
-client.login(process.env.token);
+client.login(TOKEN);
