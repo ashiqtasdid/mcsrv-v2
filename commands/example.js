@@ -7,11 +7,14 @@ module.exports = {
         const Help = new Discord.MessageEmbed()
 	    .setColor('#0099ff')
 	    .setTitle('Example - AT MCSRV Checker')
-	    .setURL('https://ashiqthedev.ml')
+	    .setURL('https://ashiqthedev.com')
 	    .setAuthor('Ashiq Tasdid')
-	    .setDescription('Read this for getting help')
+	    .setDescription('Example Commands')
 	    .addFields(
-	    	{ name: 'Example', value: '!mcsrv play.hypixel.ney 25565' })
+	    	{ name: 'Java Premium', value: '!jp play.hypixel.net 25565' },
+	    	{ name: 'Java Cracked', value: '!jc play.pixeledgebd.com 25565'},
+	    	{ name: 'Bedrock', value: '!bedrock play.pixeledgebd.com 19132' },
+            )
 
 
         .addField('AT - MCSRV checker', 'Online', true)
